@@ -8,7 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { CarouselImage } from './pages/carousel-image/carousel-image';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppRoutingModule,
     CommonModule,
     NgbModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

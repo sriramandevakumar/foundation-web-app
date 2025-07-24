@@ -15,7 +15,7 @@ interface carouselImage {
       transition(':enter', [
         style({ transform: 'translateX(-100%)' }),
         animate(
-          '30ms ease-in',
+          '300ms ease-in',
           style({
             transform: 'translateX(0%)',
           })
@@ -51,6 +51,6 @@ export class CarouselImage {
       this.selectedIndex < this.images.length - 1
         ? this.selectedIndex++
         : (this.selectedIndex = 0);
-    }, 200);
+    }, 3000);
   }
 }
