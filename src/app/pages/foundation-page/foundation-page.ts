@@ -17,4 +17,8 @@ images = [1, 2, 3].map((n) => `assets/image${n}.png`);
     config.keyboard = true;
     config.pauseOnHover = true;
   }
+
+  onSlide(slideEvent: any) {
+    console.log('Slide event:', slideEvent);
+  }
 }

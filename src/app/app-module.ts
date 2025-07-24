@@ -6,11 +6,13 @@ import { App } from './app';
 import { FoundationPage } from './pages/foundation-page/foundation-page';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
+import { CarouselImage } from './pages/carousel-image/carousel-image';
 
 @NgModule({
   declarations: [
     App,
-    FoundationPage  ],
+    FoundationPage,
+    CarouselImage  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
