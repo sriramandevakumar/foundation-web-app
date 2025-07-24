@@ -9,16 +9,28 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './foundation-page.css'
 })
 export class FoundationPage {
-images = [1, 2, 3].map((n) => `assets/image${n}.png`);
 
-  constructor(config: NgbCarouselConfig) {
-    // customize default values of carousels used by this component tree
-    config.interval = 2000;
-    config.keyboard = true;
-    config.pauseOnHover = true;
-  }
-
-  onSlide(slideEvent: any) {
-    console.log('Slide event:', slideEvent);
-  }
+  images = [
+    {
+      imageSrc:
+        'assets/image1.png',
+      imageAlt: 'nature1',
+    },
+    {
+      imageSrc:
+        'assets/image2.png',
+      imageAlt: 'nature2',
+    },
+    {
+      imageSrc:
+        'assets/image3.png',
+      imageAlt: 'person1',
+    },
+    {
+      imageSrc:
+        'assets/image4.png',
+      imageAlt: 'person2',
+    },
+  ];
+  
 }

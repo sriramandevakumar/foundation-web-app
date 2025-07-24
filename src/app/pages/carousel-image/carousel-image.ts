@@ -1,11 +1,56 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { trigger, transition, style, animate } from '@angular/animations';
 
+interface carouselImage {
+  imageSrc: string;
+  imageAlt: string;
+}
 @Component({
   selector: 'app-carousel-image',
   standalone: false,
   templateUrl: './carousel-image.html',
-  styleUrl: './carousel-image.css'
+  styleUrl: './carousel-image.css',
+  animations: [
+    trigger('carousalAnimation', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate(
+          '30ms ease-in',
+          style({
+            transform: 'translateX(0%)',
+          })
+        ),
+      ]),
+      transition(':leave', [
+        animate(
+          '300ms ease-in',
+          style({
+            transform: 'translateX(-100%)',
+          })
+        ),
+      ]),
+    ]),
+  ],
 })
 export class CarouselImage {
- images = [1, 2, 3].map((n) => `assets/image${n}.png`);
+  
+  @Input() images: carouselImage[] = [];
+  @Input() indicators = true;
+  selectedIndex = 0;
+  constructor() {}
+
+  ngOnInit(): void {
+    this.autoSlideImages();
+  }
+
+  selectImage(index: number): void {
+    this.selectedIndex = index;
+  }
+  autoSlideImages(): void {
+    setInterval(() => {
+      this.selectedIndex < this.images.length - 1
+        ? this.selectedIndex++
+        : (this.selectedIndex = 0);
+    }, 200);
+  }
 }

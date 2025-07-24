@@ -7,17 +7,21 @@ import { FoundationPage } from './pages/foundation-page/foundation-page';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { CarouselImage } from './pages/carousel-image/carousel-image';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
   declarations: [
     App,
-    FoundationPage,
-    CarouselImage  ],
+    FoundationPage ,
+    CarouselImage/// Removed FoundationPage from declarations
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    NgbModule
+    NgbModule,
+    SlickCarouselModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

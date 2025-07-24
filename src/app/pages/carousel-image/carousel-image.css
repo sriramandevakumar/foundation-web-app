@@ -1,55 +1,45 @@
-   /* Datepicker popup icon */
-
-button.calendar, button.calendar:active {
-  width: 2.75rem;
-  background-repeat: no-repeat;
-  background-size: 23px;
-  background-position: center;
-}
-
-/* Sortable table demo */
-
-th[sortable] {
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-th[sortable].desc:before, th[sortable].asc:before {
-  content: '';
-  display: block;
-  background-size: 22px;
-  width: 22px;
-  height: 22px;
-  float: left;
-  margin-left: -22px;
-}
-
-th[sortable].desc:before {
-  transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-}
-
-/* Filtering table demo */
-ngbd-table-filtering span.ngb-highlight {
-  background-color: yellow;
-}
-
-/* Complete table demo */
-ngbd-table-complete span.ngb-highlight {
-  background-color: yellow;
-}
-
-ngb-carousel .picsum-img-wrapper {
+.carousel-container {
   position: relative;
-  height: 0;
-  padding-top: 55%; /* Keep ratio for 900x500 images */
+  margin: auto;
+  text-align: center;
+  width: 700px;
+
+  border-radius: 15px;
+  box-shadow: 0 8px 16px #dce1e1;
+}
+.carousel-container img {
+  display: none;
+  border-radius: 15px;
+}
+.carousel-container img.image-active {
+  display: block;
+  width: 100%;
+  height: 400px;
 }
 
-ngb-carousel .picsum-img-wrapper>img {
+.carousel-dot-container {
   position: absolute;
-  top: 0;
+  right: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.6s ease;
+  opacity: 0.5;
+}
+.active,
+.dot:hover {
+  opacity: 1;
 }

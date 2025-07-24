@@ -12,7 +12,4 @@
     </ul>
   </nav>
 </header>
-<body><!-- Slideshow container -->
-
-<app-carousel-image></app-carousel-image>
-</body>
+ <app-carousel-image *ngIf="images" [images]="images"></app-carousel-image>
