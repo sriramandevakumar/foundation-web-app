@@ -28,6 +28,10 @@
             "assets": [
               "src/assets"
             ],
+            "polyfills": [
+              "zone.js",
+              "@angular/localize/init"
+            ],
             "styles": [
               "src/styles.css"
             ],

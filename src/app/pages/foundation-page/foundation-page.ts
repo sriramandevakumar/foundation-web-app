@@ -9,7 +9,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './foundation-page.css'
 })
 export class FoundationPage {
-images = [700, 800, 807].map((n) => `https://picsum.photos/id/${n}/900/500`);
+images = [1, 2, 3].map((n) => `assets/image${n}.png`);
 
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
@@ -18,7 +18,3 @@ images = [700, 800, 807].map((n) => `https://picsum.photos/id/${n}/900/500`);
     config.pauseOnHover = true;
   }
 }
-
-
-git config --global user.email "sriramandevakumar@gmail.com"
-  git config --global user.name "Sriramandevakumar"
