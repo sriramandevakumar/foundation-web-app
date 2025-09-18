@@ -9,12 +9,18 @@ import { CommonModule } from '@angular/common';
 import { CarouselImage } from './pages/carousel-image/carousel-image';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomePage } from './pages/home-page/home-page';
+import { HeaderComponent } from './pages/header-component/header-component';
+import { FooterComponent } from './pages/footer-component/footer-component';
 
 @NgModule({
   declarations: [
     App,
     FoundationPage ,
-    CarouselImage/// Removed FoundationPage from declarations
+    CarouselImage,
+    HomePage,
+    HeaderComponent,
+    FooterComponent/// Removed FoundationPage from declarations
   ],
   imports: [
     BrowserModule,
