@@ -1,76 +1,95 @@
-
-header {
-    background-color: var(--secondary);
-    padding: 1.5rem 5%;
-    position: fixed;
+:host {
+    display: block;
     width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary);
-    text-decoration: none;
-}
+    /* ===== Header Styles (Pastel Orange Theme) ===== */
 
-.logo span {
-    color: var(--accent);
-}
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        background: linear-gradient(135deg, #FFE9D6, #FFD2B8);
+        /* Pastel orange gradient */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 2px solid rgba(255, 153, 102, 0.3);
+    }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
+    /* ===== Logo ===== */
+    .logo {
+        font-size: 28px;
+        font-weight: 700;
+        color: #FF6F3C;
+        /* Deep pastel orange */
+        text-decoration: none;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 500;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: color 0.3s;
-}
+    .logo span {
+        color: #FF8F5A;
+        /* Softer orange */
+    }
 
-nav ul li a:hover {
-    color: var(--accent);
-}
+    /* ===== Navbar ===== */
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
 
-.header-actions {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
+    nav ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #5A4A42;
+        /* Warm brown-grey for contrast */
+        font-weight: 500;
+        transition: 0.3s ease;
+    }
 
-.header-actions i {
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: color 0.3s;
-}
+    nav ul li a:hover {
+        color: #FF6F3C;
+        /* Orange highlight */
+    }
 
-.header-actions i:hover {
-    color: var(--accent);
-}
+    /* ===== Header Actions (Icons + Button) ===== */
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
 
-.account-btn {
-    background-color: var(--accent);
-    color: white;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+    .header-actions i {
+        font-size: 20px;
+        color: #5A4A42;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 
-.account-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
+    .header-actions i:hover {
+        color: #FF6F3C;
+    }
+
+
+
+    /* ===== Responsive ===== */
+
+    @media (max-width: 900px) {
+        nav ul {
+            gap: 18px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        nav {
+            display: none;
+            /* You can replace this with mobile menu logic later */
+        }
+
+        header {
+            padding: 15px 20px;
+        }
+    }
 }
