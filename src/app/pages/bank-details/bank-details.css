@@ -1,0 +1,57 @@
+/* Pastel Blue Theme Wrapper */
+.pastel-theme {
+  --card-bg: #ffffff;
+  --border-color: #cfe2f3;   /* pastel blue */
+  --heading-color: #5a8ccf;  /* soft blue */
+  --text-color: #2d3a45;
+  --highlight-bg: #e7f1fc;   /* very soft pastel blue */
+  --highlight-border: #8eb8e5;
+}
+
+.bank-details-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 22px 26px;
+  border-radius: 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(133, 171, 215, 0.15);
+  font-family: "Segoe UI", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.bank-details-card:hover {
+  box-shadow: 0 6px 16px rgba(133, 171, 215, 0.25);
+}
+
+.bank-details-card h2 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--heading-color);
+  letter-spacing: 0.5px;
+}
+
+.bank-content p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.bank-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--heading-color);
+}
+
+.upi {
+  margin-top: 18px;
+  padding: 10px 14px;
+  background: var(--highlight-bg);
+  border-left: 4px solid var(--highlight-border);
+  font-weight: 600;
+  color: var(--heading-color);
+  border-radius: 6px;
+}

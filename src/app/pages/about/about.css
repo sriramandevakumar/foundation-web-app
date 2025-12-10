@@ -1,0 +1,106 @@
+/* Global Theme (your pastel blue palette) */
+:root {
+  --primary: #cfe2f3;
+  --primary-light: #e7f1fc;
+  --primary-dark: #5a8ccf;
+
+  --blue-muted: #8eb8e5;
+  --blue-light: #e7f1fc;
+  --blue-dark: #4a6f92;
+
+  --text-dark: #2d3a45;
+  --text-light: #ffffff;
+
+  --bg-light: #ffffff;
+}
+
+/* Layout Container */
+.brochure {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text-dark);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--primary-light);
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  color: var(--primary-dark);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 16px;
+  color: var(--blue-dark);
+  font-weight: 600;
+}
+
+/* Card Style Sections */
+.card {
+  background: var(--bg-light);
+  border: 1px solid var(--primary);
+  border-left: 6px solid var(--primary-dark);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(133, 171, 215, 0.15);
+}
+
+.card h2 {
+  margin-bottom: 16px;
+  color: var(--primary-dark);
+  font-size: 20px;
+}
+
+/* Checklist Style */
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  margin: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-dark);
+  font-weight: bold;
+}
+
+/* Highlight Block */
+.highlight-note {
+  background: var(--primary-light);
+  border-left: 4px solid var(--primary-dark);
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+/* Quote */
+.quote {
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary-dark);
+  border-left: 4px solid var(--primary-dark);
+  background: var(--primary-light);
+  border-radius: 6px;
+}
