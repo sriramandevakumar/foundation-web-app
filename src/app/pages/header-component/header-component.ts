@@ -13,4 +13,8 @@ export class HeaderComponent {
   gotoAbout() {
       this.router.navigate(['/about']);  
   }
+
+  gotoGetInvolved() {
+      this.router.navigate(['/get-involved']);  
+  }
 }

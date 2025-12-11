@@ -15,4 +15,8 @@
 
   /* Background */
   --bg-light: #ffffff;       /* clean white background */
+  --card-bg: #ffffff;
+  --border-color: #cfe2f3;   /* pastel blue */
+  --heading-color: #5a8ccf;  /* soft blue */
+  --highlight-border: #8eb8e5;
 }

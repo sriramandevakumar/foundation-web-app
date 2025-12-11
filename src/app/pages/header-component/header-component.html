@@ -1,18 +1,42 @@
 <main>
     <header>
-        <a href="#" class="logo">SYOG<span> Foundation</span></a>
-        <nav>
-            <ul>
-                <li><a href="#" >Home</a></li>
-                <li>Discover</li>
-                <li>AI Stylist</li>
-                <li>Collections</li>
-                <li (click)="gotoAbout()">About</li>
-            </ul>
-        </nav>
-        <div class="header-actions">
-            <i class="fas fa-search"></i>
+        <div class="logo-container">
+            <a href="#" class="logo">SYOG<span> Foundation</span></a>
         </div>
+        <nav>
+            <div>
+                <div class="nav-links-container">
+                    <div class="menu-items">
+                        <button class="about-us-link" (click)="gotoAbout()">About</button>
+                    </div>
+                    <div class="dropdown menu-items">
+                        <button class="dropbtn">Our Services</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown menu-items">
+                        <button class="dropbtn">Programs</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class=" menu-items">
+                        <button class="get-involved-link" (click)="gotoGetInvolved()">Get Involved</button>
+                    </div>
+                    <div class="dropdown menu-items">
+                        <button class="dropbtn">Contact Us</button>
+                        <div class="dropdown-content">
+                            <a href="#">Get in Touch</a>
+                            <a href="#">FAQ's</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    
 </main>
