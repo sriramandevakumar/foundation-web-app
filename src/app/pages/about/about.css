@@ -104,3 +104,69 @@
   background: var(--primary-light);
   border-radius: 6px;
 }
+
+
+.table-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+  }
+
+  th {
+    background: var(--primary);
+    color: var(--text-dark);
+    padding: 14px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid var(--highlight-border);
+  }
+
+  /* Rounded header corners */
+  th:first-child {
+    border-top-left-radius: 12px;
+  }
+  th:last-child {
+    border-top-right-radius: 12px;
+  }
+
+  td {
+    padding: 14px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Subtle row striping */
+  tr:nth-child(even) {
+    background: var(--primary-light);
+  }
+
+  /* Hover effect */
+  tr:hover td {
+    background: var(--blue-light);
+    transition: 0.2s ease-in-out;
+  }
+
+  .total {
+    white-space: nowrap;
+    font-weight: bold;
+    color: var(--blue-dark);
+  }
+
+  .remarks {
+    width: 25%;
+  }

@@ -44,7 +44,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
 
     }
 
@@ -61,15 +61,16 @@
         padding: 10px 10px 10px 10px;
     }
 
-    
+
     .about-us-link:hover,
     .get-involved-link:hover {
-         background-color: var(--primary-light);
+        background-color: var(--primary-light);
     }
+
     .menu-items {
         width: 15%;
         text-align: center;
-        
+
     }
 
     /* nav ul li {
@@ -107,6 +108,56 @@
 
 
     /* ===== Responsive ===== */
+
+    /* Tablet screens (768px and below) */
+    @media (max-width: 768px) {
+
+        .dropbtn,
+        .dropdown-content {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+
+        .dropdown-content a:hover {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+
+        .dropdown:hover .dropbtn {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+    }
+
+    /* Mobile screens (480px and below) */
+    @media (max-width: 480px) {
+
+        .dropbtn,
+        .dropdown-content {
+            width: 15%;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+        .dropdown-content a:hover {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .dropdown:hover .dropbtn {
+           padding: 8px 12px;
+            font-size: 14px;
+        }
+    }
 
     @media (max-width: 900px) {
         nav ul {
