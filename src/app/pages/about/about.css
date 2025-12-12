@@ -1,5 +1,5 @@
 /* Global Theme (your pastel blue palette) */
-:root {
+/* :root {
   --primary: #cfe2f3;
   --primary-light: #e7f1fc;
   --primary-dark: #5a8ccf;
@@ -12,12 +12,12 @@
   --text-light: #ffffff;
 
   --bg-light: #ffffff;
-}
+} */
 
 /* Layout Container */
 .brochure {
   padding: 30px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   font-family: "Segoe UI", sans-serif;
   color: var(--text-dark);
@@ -27,16 +27,21 @@
 .hero {
   text-align: center;
   padding: 40px 20px;
-  background: var(--primary-light);
+  background: var(--bg-light);
   border-radius: 12px;
   margin-bottom: 30px;
 }
 
-.hero h1 {
+.logo-about {
+  width: 200px;
+  display: block;
+  margin: 0px auto 0px auto;
+}
+.hero-text {
   color: var(--primary-dark);
   font-size: 32px;
-  margin-bottom: 10px;
 }
+
 
 .tagline {
   font-size: 16px;

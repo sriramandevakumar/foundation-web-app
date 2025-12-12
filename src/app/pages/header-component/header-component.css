@@ -22,17 +22,26 @@
     /* ===== Logo ===== */
     .logo-container {
         width: 25%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 
     .logo {
+        height: 44px;
+        width: auto;
+        object-fit: contain;
+        display: block;
+        padding: 0px 5px 0px 0px;
+    }
+
+    .logo-text {
         font-size: 28px;
         font-weight: 700;
         color: var(--heading-color);
         text-decoration: none;
-    }
-
-    .logo span {
-        color: var(--heading-color);
+        padding: 2px 0px 0px 0px;
     }
 
     /* ===== Navbar ===== */
@@ -143,6 +152,7 @@
             padding: 8px 12px;
             font-size: 14px;
         }
+
         .dropdown-content a:hover {
             padding: 8px 12px;
             font-size: 14px;
@@ -154,7 +164,7 @@
         }
 
         .dropdown:hover .dropbtn {
-           padding: 8px 12px;
+            padding: 8px 12px;
             font-size: 14px;
         }
     }
@@ -194,7 +204,7 @@
 
     .dropdown {
         position: relative;
-        display: inline-block;
+        display: inline-flex;
     }
 
     .dropdown-content {
@@ -204,6 +214,7 @@
         min-width: 100%;
         z-index: 1;
         padding: 1px 1px 1px 1px;
+        top: 40px
     }
 
     .dropdown-content a {
@@ -211,6 +222,8 @@
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        cursor: pointer;
+        pointer-events: auto;
     }
 
     .dropdown-content a:hover {
@@ -224,6 +237,40 @@
     .dropdown:hover .dropbtn {
         background-color: var(--primary-light);
         min-width: 160px;
+    }
+
+
+    /* Tablet (Medium screens) */
+    @media (max-width: 1024px) {
+        .logo-container {
+            width: 30%;
+        }
+    }
+
+    /* Mobile (Small screens) */
+    @media (max-width: 768px) {
+        .logo-container {
+            width: 40%;
+        }
+    }
+
+    /* Very Small Mobile */
+    @media (max-width: 480px) {
+        .logo-container {
+            width: 50%;
+        }
+
+    }
+
+    .arrow {
+        border: solid var(--heading-color);
+        border-width: 0 2px 2px 0;
+        padding: 8px 0px 0px 8px;
+        margin: 0px 0px 4px 4px;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(45deg);
+        transition: 0.3s;
     }
 
 }

@@ -1,0 +1,110 @@
+<!-- Features Section -->
+    <section class="features">
+        <div class="section-title">
+            <h2>VISION</h2>
+            <p>We envision a world, where every child has access to education and the tools to unlock their full
+                potential.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>EDUCATION INITIATIVES</h3>
+                <h4>Scholarship Program</h4>
+                <div>Providing financial assistance to deserving students to pursue education/higher education.</div>
+                <h4>School Supply Drives</h4>
+                <div>Ensuring every child has the necessary tools for learning.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h3>Virtual Try-On</h3>
+                <p>See how clothes look on your digital avatar before buying.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <h3>Outfit Generator</h3>
+                <p>Mix and match items to create complete outfits.</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- AI Outfits Section -->
+    <section class="ai-outfits">
+        <div class="section-title">
+            <h2>AI-Generated Outfits</h2>
+            <p>Explore fashion combinations created by our AI</p>
+        </div>
+
+        <div class="outfits-container">
+            <!-- Outfit Cards (same as before) -->
+            <!-- Keep all outfit-card blocks unchanged -->
+        </div>
+    </section>
+
+    <!-- AI Stylist Section -->
+    <section class="ai-stylist">
+        <div class="stylist-content">
+            <h2>Your Personal AI Stylist</h2>
+            <p>Answer simple questions and get personalized recommendations.</p>
+
+            <div class="stylist-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Style Quiz</h4>
+                        <p>Tell us about your lifestyle and preferences.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Digital Wardrobe</h4>
+                        <p>Upload pictures of your wardrobe items.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Receive Suggestions</h4>
+                        <p>Daily outfit ideas just for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="hero-btn" style="margin-top: 1.5rem;">Take the Style Quiz</a>
+        </div>
+
+        <div class="stylist-demo">
+            <div id="stylist-container"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>What Our Community Says</h2>
+            <p>Join thousands who found their style with NeoChic</p>
+        </div>
+
+        <div class="testimonial-slider">
+            <!-- 3 testimonial cards (same as your original HTML) -->
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Join the Fashion Revolution</h2>
+        <p>Subscribe to get early access, offers, and tips.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required class="newsletter-input" />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+    </section>

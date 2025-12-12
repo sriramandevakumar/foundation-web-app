@@ -1,7 +1,8 @@
 <main>
     <header>
-        <div class="logo-container">
-            <a href="#" class="logo">SYOG<span> Foundation</span></a>
+        <div class="logo-container" (click)="gotohome()">
+            <img src="assets/Logo-removebg.png" class="logo" alt="SYOG Foundation Logo">
+            <div  class="logo-text">SYOG Foundation</div>
         </div>
         <nav>
             <div>
@@ -10,7 +11,7 @@
                         <button class="about-us-link" (click)="gotoAbout()">About</button>
                     </div>
                     <div class="dropdown menu-items">
-                        <button class="dropbtn">Our Services</button>
+                        <button class="dropbtn">Our Services <span class="arrow"></span></button>
                         <div class="dropdown-content">
                             <a href="#">Scholarship Program</a>
                             <a href="#">School Supply Drives</a>
@@ -18,19 +19,19 @@
                         </div>
                     </div>
                     <div class="dropdown menu-items">
-                        <button class="dropbtn">Programs</button>
+                        <button class="dropbtn">Programs <span class="arrow"></span></button>
                         <div class="dropdown-content">
-                            <a href="#">Independence Day Celebration</a>
+                            <a (click)="gotoIndependenceDay()">Independence Day Celebration</a>
                         </div>
                     </div>
                     <div class=" menu-items">
                         <button class="get-involved-link" (click)="gotoGetInvolved()">Get Involved</button>
                     </div>
                     <div class="dropdown menu-items">
-                        <button class="dropbtn">Contact Us</button>
+                        <button class="dropbtn">Contact Us  <span class="arrow"></span></button>
                         <div class="dropdown-content">
-                            <a href="#">Get in Touch</a>
-                            <a href="#">FAQ's</a>
+                            <a (click)="gotoGetInvolved()">Get in Touch</a>
+                            <a (click)="gotofaq()">FAQ's</a>
                         </div>
                     </div>
                 </div>

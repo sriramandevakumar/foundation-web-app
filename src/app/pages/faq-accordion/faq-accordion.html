@@ -1,0 +1,24 @@
+<div class="faq-container">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="accordion-item" *ngFor="let item of faqs; let i = index">
+
+    <!-- Accordion Button -->
+    <button class="accordion" 
+            [class.active]="item.open"
+            (click)="toggle(i)">
+
+      {{ item.question }}
+
+      <span class="icon">
+        {{ item.open ? '−' : '+' }}
+      </span>
+    </button>
+
+    <!-- Accordion Panel -->
+    <div class="panel" [style.maxHeight]="item.open ? '200px' : '0px'">
+      <p>{{ item.answer }}</p>
+    </div>
+
+  </div>
+</div>

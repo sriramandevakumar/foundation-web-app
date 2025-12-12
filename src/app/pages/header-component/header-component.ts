@@ -15,6 +15,20 @@ export class HeaderComponent {
   }
 
   gotoGetInvolved() {
-      this.router.navigate(['/get-involved']);  
+      this.router.navigate(['/get-in-touch']);  
   }
+
+  gotofaq() {
+      this.router.navigate(['/faq']);  
+  }
+
+  gotohome() {
+      this.router.navigate(['/']);  
+  }
+
+  gotoIndependenceDay() {
+      this.router.navigate(['/ind-day']);  
+  }
+
+
 }

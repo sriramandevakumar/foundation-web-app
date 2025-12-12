@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syog Foundation - FAQ</title>
+</head>
+<body>
+
+<div class="faq-container">
+  <h2>Frequently Asked Questions</h2>
+
+  <!-- FAQ 1 -->
+  <button class="accordion">What is the mission of the Syog Foundation?</button>
+  <div class="panel">
+    <p>Our mission is to invest in education and well-being so that children can grow into strong, capable, and compassionate individuals.</p>
+  </div>
+
+  <!-- FAQ 2 -->
+  <button class="accordion">What does the foundation commit to every child?</button>
+  <div class="panel">
+    <p>We walk alongside each child and their family to ensure they receive the right environment, support, and resources to learn and grow.</p>
+  </div>
+
+  <!-- FAQ 3 -->
+  <button class="accordion">How does the foundation support students?</button>
+  <div class="panel">
+    <p>We provide end-to-end support including fees, books, uniforms, mentoring, extra coaching, teacher check-ins, and attendance monitoring.</p>
+  </div>
+
+  <!-- FAQ 4 -->
+  <button class="accordion">Who is eligible for support?</button>
+  <div class="panel">
+    <p>Families with a total monthly income of less than ₹20,000 are eligible.</p>
+  </div>
+
+  <!-- FAQ 5 -->
+  <button class="accordion">What academic performance is required?</button>
+  <div class="panel">
+    <p>Students must maintain at least 70% in all exams to continue receiving support.</p>
+  </div>
+
+  <!-- FAQ 6 -->
+  <button class="accordion">From which class does support start?</button>
+  <div class="panel">
+    <p>Support begins from 7th standard onward.</p>
+  </div>
+
+  <!-- FAQ 7 -->
+  <button class="accordion">Is the program open to all religions and castes?</button>
+  <div class="panel">
+    <p>Yes, we support all children irrespective of religion or caste.</p>
+  </div>
+
+  <!-- FAQ 8 -->
+  <button class="accordion">How does the foundation ensure transparency?</button>
+  <div class="panel">
+    <p>All fees are paid directly to schools, ensuring full clarity on fund usage.</p>
+  </div>
+
+  <!-- FAQ 9 -->
+  <button class="accordion">What impact has the foundation created so far?</button>
+  <div class="panel">
+    <p>We have sponsored the education of three bright and deserving students in our first year.</p>
+  </div>
+
+  <!-- FAQ 10 -->
+  <button class="accordion">What is the expected payout for the coming year?</button>
+  <div class="panel">
+    <p>The expected payout is ₹4,16,070.</p>
+  </div>
+
+  <!-- FAQ 11 -->
+  <button class="accordion">How can donors contribute?</button>
+  <div class="panel">
+    <p>Donors can support more children by contributing financially and sharing their donation screenshot for receipt issuance.</p>
+  </div>
+
+</div>
