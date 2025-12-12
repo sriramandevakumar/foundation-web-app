@@ -13,4 +13,22 @@ export class HeaderComponent {
   gotoAbout() {
       this.router.navigate(['/about']);  
   }
+
+  gotoGetInvolved() {
+      this.router.navigate(['/get-in-touch']);  
+  }
+
+  gotofaq() {
+      this.router.navigate(['/faq']);  
+  }
+
+  gotohome() {
+      this.router.navigate(['/']);  
+  }
+
+  gotoIndependenceDay() {
+      this.router.navigate(['/ind-day']);  
+  }
+
+
 }

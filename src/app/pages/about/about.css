@@ -1,5 +1,5 @@
 /* Global Theme (your pastel blue palette) */
-:root {
+/* :root {
   --primary: #cfe2f3;
   --primary-light: #e7f1fc;
   --primary-dark: #5a8ccf;
@@ -12,12 +12,12 @@
   --text-light: #ffffff;
 
   --bg-light: #ffffff;
-}
+} */
 
 /* Layout Container */
 .brochure {
   padding: 30px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   font-family: "Segoe UI", sans-serif;
   color: var(--text-dark);
@@ -27,16 +27,21 @@
 .hero {
   text-align: center;
   padding: 40px 20px;
-  background: var(--primary-light);
+  background: var(--bg-light);
   border-radius: 12px;
   margin-bottom: 30px;
 }
 
-.hero h1 {
+.logo-about {
+  width: 200px;
+  display: block;
+  margin: 0px auto 0px auto;
+}
+.hero-text {
   color: var(--primary-dark);
   font-size: 32px;
-  margin-bottom: 10px;
 }
+
 
 .tagline {
   font-size: 16px;
@@ -104,3 +109,69 @@
   background: var(--primary-light);
   border-radius: 6px;
 }
+
+
+.table-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+  }
+
+  th {
+    background: var(--primary);
+    color: var(--text-dark);
+    padding: 14px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid var(--highlight-border);
+  }
+
+  /* Rounded header corners */
+  th:first-child {
+    border-top-left-radius: 12px;
+  }
+  th:last-child {
+    border-top-right-radius: 12px;
+  }
+
+  td {
+    padding: 14px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Subtle row striping */
+  tr:nth-child(even) {
+    background: var(--primary-light);
+  }
+
+  /* Hover effect */
+  tr:hover td {
+    background: var(--blue-light);
+    transition: 0.2s ease-in-out;
+  }
+
+  .total {
+    white-space: nowrap;
+    font-weight: bold;
+    color: var(--blue-dark);
+  }
+
+  .remarks {
+    width: 25%;
+  }

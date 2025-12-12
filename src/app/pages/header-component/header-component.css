@@ -10,53 +10,94 @@
         align-items: center;
         justify-content: space-between;
         padding: 15px 40px;
-        background: linear-gradient(135deg, #FFE9D6, #FFD2B8);
+        background: var(--bg-light);
         /* Pastel orange gradient */
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         position: sticky;
         top: 0;
         z-index: 100;
-        border-bottom: 2px solid rgba(255, 153, 102, 0.3);
+        border-bottom: 2px solid var(--border-color);
     }
 
     /* ===== Logo ===== */
-    .logo {
-        font-size: 28px;
-        font-weight: 700;
-        color: #FF6F3C;
-        /* Deep pastel orange */
-        text-decoration: none;
-    }
-
-    .logo span {
-        color: #FF8F5A;
-        /* Softer orange */
-    }
-
-    /* ===== Navbar ===== */
-    nav ul {
-        display: flex;
-        list-style: none;
-        gap: 30px;
-    }
-
-    nav ul li  {
-        text-decoration: none;
-        font-size: 16px;
-        color: #5A4A42;
-        /* Warm brown-grey for contrast */
-        font-weight: 500;
-        transition: 0.3s ease;
+    .logo-container {
+        width: 25%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
     }
 
-    nav ul li:hover {
-        color: #FF6F3C;
-        /* Orange highlight */
+    .logo {
+        height: 44px;
+        width: auto;
+        object-fit: contain;
+        display: block;
+        padding: 0px 5px 0px 0px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--heading-color);
+        text-decoration: none;
+        padding: 2px 0px 0px 0px;
+    }
+
+    /* ===== Navbar ===== */
+    nav {
+        width: 75%;
+    }
+
+    .nav-links-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .about-us-link,
+    .get-involved-link {
+        background-color: inherit;
+        color: var(--heading-color);
+        border: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--heading-color);
+        cursor: pointer;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+
+
+    .about-us-link:hover,
+    .get-involved-link:hover {
+        background-color: var(--primary-light);
+    }
+
+    .menu-items {
+        width: 15%;
+        text-align: center;
+
+    }
+
+    /* nav ul li {
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--text-dark);
+        /* Warm brown-grey for contrast */
+    /*font-weight: 500;
+        transition: 0.3s ease;
+        cursor: pointer;
+    } */
+
+    nav:hover {
+        color: var(--text-dark);
     }
 
     /* ===== Header Actions (Icons + Button) ===== */
-    .header-actions {
+    /* .header-actions {
         display: flex;
         align-items: center;
         gap: 18px;
@@ -64,18 +105,69 @@
 
     .header-actions i {
         font-size: 20px;
-        color: #5A4A42;
+        color: var(--heading-color);
         cursor: pointer;
         transition: 0.3s;
     }
 
     .header-actions i:hover {
-        color: #FF6F3C;
-    }
+        color: var(--heading-color);
+    } */
 
 
 
     /* ===== Responsive ===== */
+
+    /* Tablet screens (768px and below) */
+    @media (max-width: 768px) {
+
+        .dropbtn,
+        .dropdown-content {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+
+        .dropdown-content a:hover {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+
+        .dropdown:hover .dropbtn {
+            padding: 10px 14px;
+            font-size: 15px;
+        }
+    }
+
+    /* Mobile screens (480px and below) */
+    @media (max-width: 480px) {
+
+        .dropbtn,
+        .dropdown-content {
+            width: 15%;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .dropdown:hover .dropbtn {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+    }
 
     @media (max-width: 900px) {
         nav ul {
@@ -93,4 +185,92 @@
             padding: 15px 20px;
         }
     }
+
+
+
+    /* ===== Manually added ===== */
+    .dropbtn {
+        background-color: inherit;
+        color: var(--heading-color);
+        border: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--heading-color);
+        cursor: pointer;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-flex;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--bg-light);
+        min-width: 100%;
+        z-index: 1;
+        padding: 1px 1px 1px 1px;
+        top: 40px
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--primary-light);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: var(--primary-light);
+        min-width: 160px;
+    }
+
+
+    /* Tablet (Medium screens) */
+    @media (max-width: 1024px) {
+        .logo-container {
+            width: 30%;
+        }
+    }
+
+    /* Mobile (Small screens) */
+    @media (max-width: 768px) {
+        .logo-container {
+            width: 40%;
+        }
+    }
+
+    /* Very Small Mobile */
+    @media (max-width: 480px) {
+        .logo-container {
+            width: 50%;
+        }
+
+    }
+
+    .arrow {
+        border: solid var(--heading-color);
+        border-width: 0 2px 2px 0;
+        padding: 8px 0px 0px 8px;
+        margin: 0px 0px 4px 4px;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(45deg);
+        transition: 0.3s;
+    }
+
 }

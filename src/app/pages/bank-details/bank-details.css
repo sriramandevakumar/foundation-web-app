@@ -3,8 +3,8 @@
   --card-bg: #ffffff;
   --border-color: #cfe2f3;   /* pastel blue */
   --heading-color: #5a8ccf;  /* soft blue */
-  --text-color: #2d3a45;
-  --highlight-bg: #e7f1fc;   /* very soft pastel blue */
+  --text-dark: #2d3a45;
+  --primary-light: #e7f1fc;   /* very soft pastel blue */
   --highlight-border: #8eb8e5;
 }
 
@@ -36,7 +36,7 @@
 .bank-content p {
   margin: 8px 0;
   font-size: 15px;
-  color: var(--text-color);
+  color: var(--text-dark);
 }
 
 .bank-title {
@@ -49,7 +49,7 @@
 .upi {
   margin-top: 18px;
   padding: 10px 14px;
-  background: var(--highlight-bg);
+  background: var(--primary-light);
   border-left: 4px solid var(--highlight-border);
   font-weight: 600;
   color: var(--heading-color);
