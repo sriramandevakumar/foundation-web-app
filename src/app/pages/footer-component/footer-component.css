@@ -19,7 +19,7 @@ footer {
 
 /* Logo */
 .footer-logo {
-    font-family: 'Playfair Display', serif;
+    font-family: "Segoe UI", sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color:  var(--blue-light);

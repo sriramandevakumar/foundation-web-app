@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -10,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   imports: [CommonModule]
 })
 export class HomePage {
-    constructor(private route: ActivatedRoute) {
-    console.log(route.snapshot);
+  constructor(private router: Router) {}
+  gotoAbout() {
+      this.router.navigate(['/about']);  
   }
 }

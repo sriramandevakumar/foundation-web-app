@@ -74,6 +74,7 @@
     .about-us-link:hover,
     .get-involved-link:hover {
         background-color: var(--primary-light);
+        border-radius: 8px;
     }
 
     .menu-items {
@@ -82,41 +83,13 @@
 
     }
 
-    /* nav ul li {
-        text-decoration: none;
-        font-size: 16px;
-        color: var(--text-dark);
-        /* Warm brown-grey for contrast */
-    /*font-weight: 500;
-        transition: 0.3s ease;
-        cursor: pointer;
-    } */
+   
 
     nav:hover {
         color: var(--text-dark);
     }
 
-    /* ===== Header Actions (Icons + Button) ===== */
-    /* .header-actions {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-    }
-
-    .header-actions i {
-        font-size: 20px;
-        color: var(--heading-color);
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    .header-actions i:hover {
-        color: var(--heading-color);
-    } */
-
-
-
-    /* ===== Responsive ===== */
+    
 
     /* Tablet screens (768px and below) */
     @media (max-width: 768px) {
@@ -125,21 +98,25 @@
         .dropdown-content {
             padding: 10px 14px;
             font-size: 15px;
+            border-radius: 8px;
         }
 
         .dropdown-content a:hover {
             padding: 10px 14px;
             font-size: 15px;
+            border-radius: 8px;
         }
 
         .dropdown:hover .dropdown-content {
             padding: 10px 14px;
             font-size: 15px;
+            border-radius: 8px;
         }
 
         .dropdown:hover .dropbtn {
             padding: 10px 14px;
             font-size: 15px;
+            border-radius: 8px;
         }
     }
 
@@ -151,21 +128,25 @@
             width: 15%;
             padding: 8px 12px;
             font-size: 14px;
+            border-radius: 8px;
         }
 
         .dropdown-content a:hover {
             padding: 8px 12px;
             font-size: 14px;
+            border-radius: 8px;
         }
 
         .dropdown:hover .dropdown-content {
             padding: 8px 12px;
             font-size: 14px;
+            border-radius: 8px;
         }
 
         .dropdown:hover .dropbtn {
             padding: 8px 12px;
             font-size: 14px;
+            border-radius: 8px;
         }
     }
 
@@ -178,7 +159,6 @@
     @media (max-width: 700px) {
         nav {
             display: none;
-            /* You can replace this with mobile menu logic later */
         }
 
         header {
@@ -199,12 +179,14 @@
         cursor: pointer;
         width: 100%;
         padding: 10px 10px 10px 10px;
+        border-radius: 8px;
 
     }
 
     .dropdown {
         position: relative;
         display: inline-flex;
+        border-radius: 8px;
     }
 
     .dropdown-content {
@@ -214,7 +196,8 @@
         min-width: 100%;
         z-index: 1;
         padding: 1px 1px 1px 1px;
-        top: 40px
+        top: 40px;
+        border-radius: 8px;
     }
 
     .dropdown-content a {
@@ -228,15 +211,18 @@
 
     .dropdown-content a:hover {
         background-color: var(--primary-light);
+        border-radius: 8px;
     }
 
     .dropdown:hover .dropdown-content {
         display: block;
+        border-radius: 8px;
     }
 
     .dropdown:hover .dropbtn {
         background-color: var(--primary-light);
         min-width: 160px;
+        border-radius: 8px;
     }
 
 

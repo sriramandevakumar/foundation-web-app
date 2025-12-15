@@ -1,23 +1,7 @@
-/* Global Theme (your pastel blue palette) */
-/* :root {
-  --primary: #cfe2f3;
-  --primary-light: #e7f1fc;
-  --primary-dark: #5a8ccf;
 
-  --blue-muted: #8eb8e5;
-  --blue-light: #e7f1fc;
-  --blue-dark: #4a6f92;
-
-  --text-dark: #2d3a45;
-  --text-light: #ffffff;
-
-  --bg-light: #ffffff;
-} */
-
-/* Layout Container */
 .brochure {
   padding: 30px;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: auto;
   font-family: "Segoe UI", sans-serif;
   color: var(--text-dark);
