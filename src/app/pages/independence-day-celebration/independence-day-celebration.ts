@@ -9,5 +9,10 @@ import { CarouselComponent } from '../../movements/carousel.component/carousel.c
 })
 export class IndependenceDayCelebration {
 constructor(private route: ActivatedRoute) {}
-
+ public independenceImages = [
+    'assets/IndependenceDayImages/ind-1.png',
+    'assets/IndependenceDayImages/ind-2.png',
+    'assets/IndependenceDayImages/ind-3.png',
+    'assets/IndependenceDayImages/ind-4.png'
+  ];
 }

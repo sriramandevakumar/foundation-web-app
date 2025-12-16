@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,13 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class CarouselComponent {
 
-  images = [
-    'assets/IndependenceDayImages/ind-1.png',
-    'assets/IndependenceDayImages/ind-2.png',
-    'assets/IndependenceDayImages/ind-3.png',
-    'assets/IndependenceDayImages/ind-4.png'
-  ];
-
+ 
+ @Input() images: string[] = [];
   currentIndex = 0;
 
   constructor() {

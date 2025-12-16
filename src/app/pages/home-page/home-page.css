@@ -1,6 +1,6 @@
 .main-content {
-    padding: 30px;
-    max-width: 1500px;
+    /* padding: 30px;
+    max-width: 1500px; */
     margin: auto;
     font-family: "Segoe UI", sans-serif;
     color: var(--text-dark);
@@ -9,10 +9,10 @@
 .card {
     background: var(--bg-light);
     border: 1px solid var(--primary);
-    border-left: 6px solid var(--primary-dark);
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
+    /* border-left: 6px solid var(--primary-dark); */
+    padding: 10px;
+    /* margin-bottom: 25px; */
+    /* border-radius: 8px; */
     box-shadow: 0 4px 10px rgba(133, 171, 215, 0.15);
     display: flex;
     align-items: center;
@@ -217,7 +217,7 @@ table {
 
   tr:last-child td {
     border-bottom: none;
-  }
+}
 
   /* Subtle row striping */
   tr:nth-child(even) {
