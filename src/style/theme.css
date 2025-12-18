@@ -1,23 +1,22 @@
+
 :root {
-  /* Primary Pastel Blue Palette */
-  --primary: #cfe2f3;        /* pastel blue */
-  --primary-light: #e7f1fc;  /* very soft pastel blue */
-  --primary-dark: #5a8ccf;   /* soft blue accent */
-  --primary-dark-muted: #9dbad6;
-   --text-dark-muted: #1a1a1a;
-  /* Blue Variants (muted / light / dark) */
-  --blue-muted: #8eb8e5;     /* muted soft pastel blue */
-  --blue-light: #e7f1fc;     /* ultra-light pastel blue */
-  --blue-dark: #4a6f92;      /* deeper blue tone */
+  --primary: #f8f9fa;
+  --primary-light: #ffffff;
+  --primary-dark: #e9ecef;
+  --primary-dark-muted: #dee2e6;
+  --text-dark-muted: #495057;
 
-  /* Text Colors */
-  --text-dark: #2d3a45;      /* dark slate */
-  --text-light: #ffffff;     /* white */
+  --blue-muted: #6c757d;
+  --blue-light: #f8f9fa;
+  --blue-dark: #343a40;
 
-  /* Background */
-  --bg-light: #ffffff;       /* clean white background */
+  --text-dark: #212529;
+  --text-light: #f8f9fa;
+
+  --bg-light: #ffffff;
   --card-bg: #ffffff;
-  --border-color: #cfe2f3;   /* pastel blue */
-  --heading-color: #5a8ccf;  /* soft blue */
-  --highlight-border: #8eb8e5;
+  --border-color: #dee2e6;
+  --heading-color: #343a40;
+  --highlight-border: #adb5bd;
+  --accent: #007bff;
 }
