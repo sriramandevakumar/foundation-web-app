@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './scholarship-program.css'
 })
 export class ScholarshipProgram {
+gotoAbout() {
+throw new Error('Method not implemented.');
+}
 
 }

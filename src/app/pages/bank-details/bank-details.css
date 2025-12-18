@@ -1,57 +1,247 @@
-/* Pastel Blue Theme Wrapper */
-.pastel-theme {
-  --card-bg: #ffffff;
-  --border-color: #cfe2f3;   /* pastel blue */
-  --heading-color: #5a8ccf;  /* soft blue */
-  --text-dark: #2d3a45;
-  --primary-light: #e7f1fc;   /* very soft pastel blue */
-  --highlight-border: #8eb8e5;
+.main-content {
+    padding: 30px;
+    max-width: 1500px;
+    margin: auto;
+    font-family: "Segoe UI", sans-serif;
+    color: var(--text-dark);
 }
 
-.bank-details-card {
-  width: 100%;
-  max-width: 460px;
-  padding: 22px 26px;
-  border-radius: 14px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 12px rgba(133, 171, 215, 0.15);
-  font-family: "Segoe UI", sans-serif;
-  transition: all 0.2s ease-in-out;
+.card {
+    background: var(--bg-light);
+    border: 1px solid var(--primary);
+    border-left: 6px solid var(--primary-dark);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(133, 171, 215, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.bank-details-card:hover {
-  box-shadow: 0 6px 16px rgba(133, 171, 215, 0.25);
+.card h1 {
+    margin-bottom: 16px;
+    color: var(--primary-dark);
+    font-size: 28px;
 }
 
-.bank-details-card h2 {
-  margin: 0 0 18px;
-  font-size: 22px;
-  font-weight: 700;
-  text-align: center;
-  color: var(--heading-color);
-  letter-spacing: 0.5px;
+.card h2 {
+    font-size: 20px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
 }
 
-.bank-content p {
-  margin: 8px 0;
-  font-size: 15px;
-  color: var(--text-dark);
+
+.card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 12px;
 }
 
-.bank-title {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: var(--heading-color);
+/* Achievements list */
+.card ul {
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
-.upi {
-  margin-top: 18px;
-  padding: 10px 14px;
-  background: var(--primary-light);
-  border-left: 4px solid var(--highlight-border);
-  font-weight: 600;
-  color: var(--heading-color);
-  border-radius: 6px;
+.card li {
+    margin-bottom: 8px;
+    font-size: 15px;
 }
+
+/* CTA section */
+.card .donate-btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 12px 30px;
+    background: var(--primary-dark);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card .donate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(133, 171, 215, 0.35);
+}
+
+/* Note text */
+.card .note {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Donor section */
+.donor-highlights {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px dashed var(--primary);
+}
+
+.donor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Donor pill style */
+.donor {
+    background: var(--primary-light);
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(133, 171, 215, 0.15);
+}
+
+.getStrarted-btn {
+    background-color: var(--accent);
+    color: var(--heading-color);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid var(--heading-color);
+}
+
+.getStrarted-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px var(--highlight-border);
+}
+
+.getStrarted-btn.secondary {
+    background-color: transparent;
+    color: var(--heading-color);
+    border: 2px solid var(--heading-color);
+    margin-left: 1rem;
+}
+
+.getStrarted-btn.secondary:hover {
+    color: var(--heading-color);
+    box-shadow: 0 10px 20px var(--highlight-border);
+}
+
+.section-content-text {
+    width: 50%;
+}
+
+.section-content-image {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.section-content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-content-text,
+    .section-content-image {
+        width: 100%;
+    }
+
+    .getStrarted-btn.secondary {
+        margin-left: 0;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+}
+
+.table-card {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.table-card thead th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+  }
+
+  th {
+    background: var(--primary);
+    color: var(--text-dark);
+    padding: 14px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid var(--highlight-border);
+  }
+
+  /* Rounded header corners */
+  th:first-child {
+    border-top-left-radius: 12px;
+  }
+  th:last-child {
+    border-top-right-radius: 12px;
+  }
+
+  td {
+    padding: 14px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Subtle row striping */
+  tr:nth-child(even) {
+    background: var(--primary-light);
+  }
+
+  /* Hover effect */
+  tr:hover td {
+    background: var(--blue-light);
+    transition: 0.2s ease-in-out;
+  }
+
+  .total {
+    white-space: nowrap;
+    font-weight: bold;
+    color: var(--blue-dark);
+  }
+
+  .remarks {
+    width: 25%;
+  }
+
+  .Celebrating{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
