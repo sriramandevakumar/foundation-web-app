@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './school-supply-drives.css'
 })
 export class SchoolSupplyDrives {
+gotoAbout() {
+throw new Error('Method not implemented.');
+}
 
 }

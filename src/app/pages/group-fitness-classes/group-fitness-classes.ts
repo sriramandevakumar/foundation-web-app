@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './group-fitness-classes.css'
 })
 export class GroupFitnessClasses {
+gotoAbout() {
+throw new Error('Method not implemented.');
+}
 
 }
